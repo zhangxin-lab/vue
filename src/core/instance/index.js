@@ -1,3 +1,5 @@
+// new Vue()执行的代码的入口文件
+
 import { initMixin } from './init'
 import { stateMixin } from './state'
 import { renderMixin } from './render'
@@ -11,6 +13,7 @@ function Vue (options) {
   ) {
     warn('Vue is a constructor and should be called with the `new` keyword')
   }
+//   执行vue 原型上的init方法
   this._init(options)
 }
 
